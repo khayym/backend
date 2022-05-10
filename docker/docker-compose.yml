@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=xeyyam071105
+      - MYSQL_DATABASE=x_db
+    ports:
+      - 3307:3306
+    volumes:
+      - ./db:/var/lib/mysql
